@@ -1,0 +1,10 @@
+#estimador MQO de b1 e de b2
+#exemplo passo a passo
+
+x<- c(10,20,30)
+y <- c(20,25,45)
+plot(x,y, col="red",ylim=c(0,50),pch=16)
+mod <- lm(y~x)
+summary(mod)
+
+abline(mod, col="blue", lwd=2)
