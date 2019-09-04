@@ -1,3 +1,5 @@
+#pag 214, ex 7.1 do gujarati
+
 library(readxl)
 file <- "Table 6_4.xls"
 df <- read_excel(file, sheet="Table 6_4", col_names=TRUE, skip=2)
