@@ -16,3 +16,5 @@ txx <- t(x)%*%x
 inv <- solve(txx)
 b <- inv %*% t(x) %*% df$CM
 
+modLin <- lm(df$CM~df$FLR+df$PGNP)
+summary(modLin)
