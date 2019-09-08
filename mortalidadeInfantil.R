@@ -9,7 +9,7 @@ plot(df$PGNP, df$CM, pch=16, col="blue")
 plot(df$FLR, df$CM, pch=16, col="blue") #plot(x, y)
 
 #criar o x
-
+#a primeira coluna tem só 1, por isso o rep(1,15)
 x <- cbind(rep(1,64), df$PGNP, df$FLR)
 #transposta:
 txx <- t(x)%*%x
