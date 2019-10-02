@@ -25,3 +25,7 @@ abline(lm(df2$poup~df2$renda), col="red",lwd=2) #segundo split
 mod1 <- lm(df1$poup~df1$renda)
 mod2 <- lm(df2$poup~df2$renda)
 mod <- lm(df$poup~df$renda)
+
+summary(mod)
+summary(mod1)
+summary(mod2)
