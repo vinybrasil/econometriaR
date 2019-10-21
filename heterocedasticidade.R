@@ -7,7 +7,7 @@ rm(list = ls()) #remove tudo da memoria
 #colunas = tamanho da empresa
 #linhas = setor
 
-
+#------------------COM DP CONHECIDO---------------------------------------------------
 
 df  <- read_excel("Table 11_1.xls",col_names=TRUE,skip=29)
 df[11,1] = "Media"
@@ -34,3 +34,7 @@ summary(mq01) #alto t e alto r2, normalmente Pr(t) alto demais
 mqp <- lm(df2$Ydp~0+df2$dpinv+df2$Xdp)
 summary(mqp)
 #y = 3392 + 154.Xdp
+
+#-----------------------------COM DP DESCONHECIDO-------------------------------
+
+#ao inves de dividir por dp, estima a 
