@@ -22,4 +22,8 @@ summary(mod1)
 #ou compara com regioes que nao  fizeram
 plot(mod1$residuals, type="p", lwd=2)
 hist(mod1$residuals, col="yellow")
-df$Yhat
+
+
+#aplicar os MQ ponderados
+
+#falta a parte final
